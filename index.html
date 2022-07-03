@@ -24,10 +24,7 @@
 			<div class="container">
 				<div class="flex">
 					<nav class="nav">
-						<a href="./index.html" class="logo-web-header">
-							Web
-							<span class="logo-studio-header">Studio</span>
-						</a>
+						<a href="./index.html" class="logo-web-header">Web<span class="logo-studio-header">Studio</span></a>
 						<!-- head of document center (menu)-->
 						<ul class="menu-top-center">
 							<li class="item">
@@ -69,7 +66,7 @@
 		<main>
 			<section class="top-main section">
 				<h1 class="top-main-text">Эффективные решения для вашего бизнеса</h1>
-				<button type="button" class="top-main-button">Заказать услугу</button>
+				<button type="button" class="top-main-button" data-modal-open>Заказать услугу</button>
 			</section>
 			<section class="middle-main section">
 				<div class="container">
@@ -119,25 +116,34 @@
 					<h2 class="menu-item-name">Чем мы занимаемся</h2>
 					<ul class="middle-main-title">
 						<li class="item">
-							<img
-								src="images/close-up-image-programer-working-his-desk-office_1098-18707.jpg"
-								alt="программист работающий в офисе"
-								width="370"
-							/>
+							<div class="item-image">
+								<img
+									src="images/close-up-image-programer-working-his-desk-office_1098-18707.jpg"
+									alt="программист работающий в офисе"
+									width="370"
+								/>
+								<h2 class="item-text">Десктопные приложения</h2>
+							</div>
 						</li>
 						<li class="item">
-							<img
-								src="images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg"
-								alt="веб-дизайнеры разрабатывают интерфейс приложений для смартфонов"
-								width="370"
-							/>
+							<div class="item-image">
+								<img
+									src="images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg"
+									alt="веб-дизайнеры разрабатывают интерфейс приложений для смартфонов"
+									width="370"
+								/>
+								<h2 class="item-text">Мобильные приложения</h2>
+							</div>
 						</li>
 						<li class="item">
-							<img
-								src="images/creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg"
-								alt="художник с рабочей цветовой гаммой в графическом планшете"
-								width="370"
-							/>
+							<div class="item-image">
+								<img
+									src="images/creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg"
+									alt="художник с рабочей цветовой гаммой в графическом планшете"
+									width="370"
+								/>
+								<h2 class="item-text">Дизайнерские решения</h2>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -399,5 +405,16 @@
 				</div>
 			</div>
 		</footer>
+		<!-- Modal window -->
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button class="button-close" data-modal-close>
+					<svg class="icon-close">
+						<use href="./images/icons.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
